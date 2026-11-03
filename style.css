@@ -1,0 +1,1098 @@
+:root {
+  --podplane-blue: #0066ff;
+  --podplane-ink: #121826;
+  --podplane-muted: #5d6677;
+  --podplane-surface: #f4f7fb;
+  --slidev-code-font-size: 14px;
+}
+
+.slidev-layout {
+  background: #fff;
+  color: var(--podplane-ink);
+  font-size: 1.65rem;
+}
+
+.slidev-layout h1 {
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+.slidev-layout h1 + p {
+  margin-top: 1.25rem;
+}
+
+.slidev-layout li {
+  margin-block: 0.7rem;
+}
+
+.slidev-layout ol {
+  list-style: upper-alpha;
+  padding-left: 1.5em;
+}
+
+.slidev-layout ol li::marker {
+  color: var(--podplane-blue);
+  font-weight: 700;
+}
+
+.slidev-code-wrapper {
+  --terminal-inline-padding: 1.25rem;
+  background: var(--podplane-surface);
+  border: 1px solid #d7deea;
+  border-radius: 1rem;
+  box-shadow: 0 0.35rem 1rem rgb(18 24 38 / 8%);
+  overflow: hidden;
+  padding-top: calc(var(--terminal-inline-padding) + var(--terminal-inline-padding) + 0.65rem);
+}
+
+.slidev-code-wrapper::before {
+  background: #ff5f57;
+  border-radius: 50%;
+  box-shadow: 1.1rem 0 #ffbd2e, 2.2rem 0 #28c840;
+  content: '';
+  height: 0.65rem;
+  left: var(--terminal-inline-padding);
+  position: absolute;
+  top: var(--terminal-inline-padding);
+  width: 0.65rem;
+}
+
+.slidev-code-wrapper .slidev-code {
+  background: transparent !important;
+  border-radius: 0;
+  margin: 0;
+  padding: 0 var(--terminal-inline-padding) var(--terminal-inline-padding) !important;
+}
+
+.slidev-code .line:has(> span:empty) {
+  line-height: 0.4;
+}
+
+.slidev-code code,
+.slidev-code .line:not(:has(> span:empty)) {
+  line-height: 1.3;
+}
+
+.slidev-layout h1:has(+ .slidev-code-wrapper) {
+  margin-bottom: 1.5rem;
+}
+
+.section-number {
+  align-items: center;
+  background: var(--podplane-blue);
+  color: #fff;
+  display: flex;
+  font-size: 1.25rem;
+  font-weight: 700;
+  height: 2.5rem;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 2.5rem;
+  width: 2.5rem;
+}
+
+.experiment-grid {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 2rem;
+}
+
+.experiment-card {
+  background: var(--podplane-surface);
+  border: 1px solid #d7deea;
+  border-radius: 1rem;
+  min-height: 8.5rem;
+  padding: 1.35rem 1.2rem 1.1rem;
+  position: relative;
+}
+
+.experiment-label {
+  background: #fff;
+  border-radius: 0.3rem;
+  color: var(--podplane-blue);
+  font-size: 0.75rem;
+  font-weight: 800;
+  left: 1rem;
+  letter-spacing: 0.13em;
+  padding: 0 0.45rem;
+  position: absolute;
+  text-transform: uppercase;
+  top: -0.55rem;
+}
+
+.experiment-copy {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.experiment-findings {
+  grid-column: 1 / -1;
+  min-height: 10rem;
+}
+
+.experiment-findings-intro {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.experiment-findings ul {
+  display: grid;
+  font-size: 1.15rem;
+  gap: 1rem 2.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  line-height: 1.3;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.experiment-findings li {
+  margin: 0;
+}
+
+.eyebrow {
+  color: var(--podplane-blue);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.speaker {
+  color: var(--podplane-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.45rem;
+}
+
+.opening-content {
+  bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 3.5rem;
+  position: absolute;
+  right: 3.5rem;
+  top: 0;
+}
+
+.opening-content .question {
+  margin-top: 0;
+}
+
+.opening-content .slidev-vclick-hidden {
+  display: none;
+}
+
+.question {
+  font-size: 3.1rem;
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 1.05;
+  margin-top: 2.2rem;
+  max-width: 85%;
+}
+
+.muted {
+  color: var(--podplane-muted);
+}
+
+.accent {
+  color: var(--podplane-blue);
+}
+
+.pill-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 2rem;
+}
+
+.pill {
+  background: var(--podplane-surface);
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1.15rem 1.3rem;
+}
+
+.pill-centered {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.project-cards {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1.25rem;
+}
+
+.project-card {
+  align-items: center;
+  background: var(--podplane-surface);
+  border: 1px solid #d7deea !important;
+  border-style: solid !important;
+  border-radius: 1rem;
+  color: inherit;
+  display: flex;
+  text-decoration: none;
+}
+
+.project-card-featured {
+  justify-content: space-evenly;
+  min-height: 13rem;
+  padding: 1.1rem 1.5rem;
+}
+
+/* Optical nudge: the wide logo makes the centred text look right-heavy. */
+.project-card-featured > .project-github {
+  position: relative;
+  left: -0.75rem;
+}
+
+.project-card-row {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-card-row-5 {
+  gap: 0.75rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.project-card-tile {
+  flex-direction: column;
+  gap: 0.35rem;
+  justify-content: center;
+  padding: 0.9rem 0.4rem;
+  text-align: center;
+}
+
+.project-card-tile .project-logo-icon {
+  height: 3.25rem;
+  margin-bottom: 0.25rem;
+  width: 3.25rem;
+}
+
+.project-card-tile .project-logo-agent-sandbox {
+  padding: 0.45rem;
+}
+
+.project-card-tile .project-logo-nono {
+  height: 4.75rem;
+  width: 8rem;
+}
+
+.project-logo-wordmark {
+  color: var(--podplane-ink);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.55rem;
+  font-weight: 800;
+  height: auto;
+  justify-content: center;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  margin-bottom: 0.25rem;
+}
+
+.project-card .project-logo-wordmark span {
+  color: var(--podplane-blue);
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.project-card-tile strong {
+  color: var(--podplane-blue);
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.project-card-tile .github-repo {
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+.project-card-small {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-rows: 1fr auto;
+  height: 10rem;
+  padding: 1rem 1rem 1.1rem;
+  text-align: center;
+}
+
+.project-logo {
+  height: 5rem;
+  max-width: 100%;
+  object-fit: contain;
+  width: 11rem;
+}
+
+.project-logo-podplane {
+  height: 7.6rem;
+  width: 12rem;
+}
+
+.project-logo-icon {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+.project-logo-agent-sandbox {
+  background: #326ce5;
+  border-radius: 0.75rem;
+  padding: 0.65rem;
+}
+
+.project-wordmark {
+  align-items: center;
+  display: flex;
+  gap: 0.65rem;
+  height: 6.25rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.project-wordmark strong {
+  color: var(--podplane-blue);
+  font-size: 1.35rem;
+}
+
+.project-github {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  text-align: center;
+}
+
+.project-github strong {
+  font-size: 1.25rem;
+}
+
+.project-card span {
+  color: #465166;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.github-repo {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.35rem;
+  justify-content: center;
+}
+
+.github-repo svg {
+  flex: 0 0 auto;
+  font-size: 1.15rem;
+}
+
+.final-contact {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1.15rem;
+}
+
+.final-contact a {
+  align-items: center;
+  border: 0 !important;
+  color: #465166;
+  display: inline-flex;
+  font-size: 0.9rem;
+  font-weight: 600;
+  gap: 0.4rem;
+  text-decoration: none;
+}
+
+.final-contact svg {
+  color: var(--podplane-blue);
+  font-size: 1.15rem;
+}
+
+.qr-frame {
+  background: transparent;
+  border: 0;
+  display: inline-flex;
+  padding: 0;
+}
+
+.common-footer {
+  bottom: 1rem;
+  color: var(--podplane-muted);
+  display: flex;
+  font-size: 0.75rem;
+  justify-content: space-between;
+  left: 3.5rem;
+  position: absolute;
+  right: 3.5rem;
+  z-index: 10;
+}
+
+.common-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-meta {
+  flex-shrink: 0;
+  margin-left: 1.5rem;
+}
+
+/* Talk content shares the existing light palette and project-card treatment. */
+.talk-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.8rem;
+}
+
+.talk-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.talk-card {
+  background: var(--podplane-surface);
+  border: 1px solid #d7deea;
+  border-radius: 1rem;
+  padding: 1.15rem 1.25rem;
+}
+
+.slidev-layout .talk-card h3 {
+  color: var(--podplane-blue);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+  opacity: 1;
+  text-transform: none;
+}
+
+.talk-card p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.talk-card p + p {
+  margin-top: 0.8rem;
+}
+
+.takeaway {
+  border-left: 3px solid var(--podplane-blue);
+  color: var(--podplane-muted);
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin-top: 1.4rem;
+  padding: 0.4rem 0 0.4rem 1rem;
+}
+
+.takeaway strong {
+  color: var(--podplane-ink);
+}
+
+.harness-flow {
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0.8rem 0;
+}
+
+.harness-flow span {
+  color: var(--podplane-blue);
+}
+
+
+/* OpenTofu talk additions */
+.title-meta {
+  color: var(--podplane-muted);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.talk-card-muted {
+  background: #fff;
+}
+
+.talk-card-accent {
+  background: #eef5ff;
+  border-color: #8eb9ff;
+}
+
+.slidev-layout .talk-card h3 svg {
+  display: inline-block;
+  margin-right: 0.45rem;
+  vertical-align: -0.15em;
+}
+
+.talk-card small {
+  color: var(--podplane-blue);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.harness-flow strong {
+  background: var(--podplane-blue);
+  border-radius: 0.6rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.step-flow {
+  align-items: stretch;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+  margin-top: 1.8rem;
+}
+
+.step-flow > span {
+  align-items: center;
+  color: var(--podplane-blue);
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.step-flow .talk-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.slidev-layout .step-flow .talk-card h3 {
+  margin-top: 0.6rem;
+}
+
+.step-flow .talk-card p {
+  font-size: 1rem;
+}
+
+.talk-card p.card-friction {
+  border-top: 1px solid #d7deea;
+  color: var(--podplane-muted);
+  font-size: 0.85rem;
+  margin-top: auto;
+  padding-top: 0.6rem;
+}
+
+.chip-row {
+  display: flex;
+  gap: 0.65rem;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.chip-row span {
+  background: #eef5ff;
+  border-radius: 999px;
+  color: #185ab8;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.4rem 0.9rem;
+}
+
+.option-grid {
+  display: grid;
+  gap: 0.6rem 2.5rem;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.option-grid div {
+  align-items: center;
+  display: flex;
+  font-size: 0.85rem;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.option-grid strong {
+  margin-right: 0.15rem;
+  width: 3.8rem;
+}
+
+.option-grid span {
+  border: 1.5px solid #d7deea;
+  border-radius: 0.4rem;
+  color: var(--podplane-muted);
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+}
+
+.demo-grid {
+  align-items: center;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 0.9fr 1.1fr;
+  margin-top: 1.6rem;
+}
+
+.demo-steps {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.demo-steps > div {
+  align-items: center;
+  display: grid;
+  gap: 0.1rem 0.9rem;
+  grid-template-columns: 2.4rem 1fr;
+}
+
+.demo-steps > div > span {
+  align-items: center;
+  background: #eef5ff;
+  border-radius: 50%;
+  color: var(--podplane-blue);
+  display: flex;
+  font-size: 0.95rem;
+  font-weight: 800;
+  grid-row: 1 / 3;
+  height: 2.4rem;
+  justify-content: center;
+  width: 2.4rem;
+}
+
+.demo-steps strong {
+  font-size: 1.3rem;
+}
+
+.demo-steps small {
+  color: var(--podplane-muted);
+  font-size: 1rem;
+}
+
+.closing-points {
+  margin-top: 1.4rem;
+}
+
+.section-rule + .closing-points {
+  margin-top: 1rem;
+}
+
+.closing-project .project-card-featured {
+  min-height: 9rem;
+}
+
+.closing-project .project-logo-podplane {
+  height: 6rem;
+}
+
+.slidev-layout.goal-slide h1 {
+  margin-bottom: 0;
+}
+
+.slidev-layout p.subheading {
+  color: var(--podplane-muted);
+  font-size: 1.15rem;
+  margin: 0.9rem 0 0;
+  white-space: nowrap;
+}
+
+.slidev-layout .talk-card ul {
+  font-size: 1.1rem;
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.slidev-layout .talk-card li {
+  line-height: 1.4;
+  margin-block: 0 0.5rem;
+  padding-left: 0.2rem;
+}
+
+.talk-card li::marker {
+  color: var(--podplane-blue);
+}
+
+/* Slide 4: version 1 and its learnings on one slide. */
+.slidev-layout.v1-slide .step-flow {
+  margin-top: 1.2rem;
+}
+
+.slidev-layout.v1-slide .step-flow .talk-card {
+  padding-block: 0.8rem;
+}
+
+.slidev-layout.v1-slide .chip-row {
+  margin-top: 0.8rem;
+}
+
+/* A divider with a lead-in label centred on it, styled like the chip-row lead-in. */
+.section-rule {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.section-rule strong {
+  color: var(--podplane-ink);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.section-rule::before,
+.section-rule::after {
+  border-top: 1px solid #d7deea;
+  content: '';
+  flex: 1;
+}
+
+.slidev-layout.v1-slide .talk-grid {
+  margin-top: 1rem;
+}
+
+.slidev-layout.v1-slide .talk-grid .talk-card {
+  padding-block: 0.85rem;
+}
+
+.slidev-layout.v1-slide .talk-grid .talk-card p {
+  font-size: 1rem;
+}
+
+.slidev-layout.v1-slide .takeaway {
+  margin-top: 1rem;
+}
+
+.chip-row strong {
+  align-self: center;
+  color: var(--podplane-ink);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* Slide 5: events along a time axis, each card hanging from its milestone. */
+.timeline {
+  column-gap: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-rows: auto 1fr auto;
+  margin-top: 1.8rem;
+  position: relative;
+}
+
+.timeline::before {
+  border-top: 2px solid #c9d6ea;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0.4rem;
+  top: 0.55rem;
+}
+
+/* Arrowhead: time moves left to right. */
+.timeline::after {
+  border-bottom: 0.4rem solid transparent;
+  border-left: 0.6rem solid #c9d6ea;
+  border-top: 0.4rem solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: calc(0.55rem - 0.35rem);
+}
+
+/* Each event and its card share the timeline's rows, so every divider lines up. */
+.timeline-event {
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+}
+
+.timeline-marker {
+  align-items: center;
+  align-self: flex-start;
+  background: #fff;
+  justify-self: start;
+  color: var(--podplane-blue);
+  display: flex;
+  font-size: 0.7rem;
+  font-weight: 800;
+  gap: 0.5rem;
+  letter-spacing: 0.12em;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  padding-right: 0.5rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.timeline-marker::before {
+  background: #fff;
+  border: 3px solid var(--podplane-blue);
+  border-radius: 50%;
+  box-sizing: border-box;
+  content: '';
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+.timeline-event-accent .timeline-marker::before {
+  background: var(--podplane-blue);
+}
+
+.timeline-event .talk-card {
+  display: grid;
+  grid-row: 2 / span 2;
+  grid-template-rows: subgrid;
+  margin-top: 0.8rem;
+  position: relative;
+}
+
+/* Stem from the milestone dot down to its card. */
+.timeline-event .talk-card::before {
+  border-left: 2px solid #c9d6ea;
+  content: '';
+  height: 0.8rem;
+  left: calc(0.55rem - 1px);
+  position: absolute;
+  top: calc(-0.8rem - 1px);
+}
+
+.timeline .talk-card p {
+  font-size: 1rem;
+}
+
+/* Five cards share the width, so trim side padding rather than text size. */
+.timeline-event .talk-card {
+  padding-inline: 1rem;
+}
+
+/* The event that went wrong: a muted red note, not an alarm. */
+.talk-card p.card-friction-bug {
+  color: #b0473f;
+}
+
+/* Centre each card's main content in the space above its divider,
+   keeping a gap above the divider even in the tallest card. */
+.timeline .card-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
+
+.slidev-layout .timeline .talk-card p.card-friction {
+  margin-top: 0;
+}
+
+/* Slide 5: the beta feedback card as a customer quote. */
+.slidev-layout .quote-card blockquote {
+  background: none;
+  border: 0;
+  color: var(--podplane-ink);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.35rem;
+  font-style: italic;
+  line-height: 1.3;
+  margin: 0;
+  padding: 2rem 0 0;
+  position: relative;
+}
+
+.slidev-layout .quote-card blockquote::before {
+  color: var(--podplane-blue);
+  content: '\201C';
+  font-size: 3.6rem;
+  font-style: normal;
+  left: -0.15rem;
+  line-height: 1;
+  position: absolute;
+  top: -0.6rem;
+}
+
+/* Slide 5: lift the quote so its first line lines up with the other cards' headings,
+   and drop the quote mark back so it only moves up ~2.5px overall. */
+.slidev-layout .timeline .quote-card .card-main {
+  position: relative;
+  top: -1.1rem;
+}
+
+.slidev-layout .timeline .quote-card blockquote::before {
+  top: 0.35rem;
+}
+
+.slidev-layout .quote-card p.quote-attribution {
+  align-items: center;
+  color: var(--podplane-muted);
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 600;
+  gap: 0.4rem;
+  margin-top: 0.7rem;
+}
+
+.quote-attribution svg {
+  color: var(--podplane-blue);
+  flex: 0 0 auto;
+}
+
+/* A divider label above the checklist replaces its top border. */
+/* Slide 7: the checklist's divider label is larger and in the accent colour. */
+.slidev-layout .section-rule:has(+ ul.checklist) strong {
+  color: var(--podplane-blue);
+  font-size: 1.05rem;
+}
+
+.slidev-layout .section-rule + ul.checklist {
+  border-top: 0;
+  margin-top: 0.4rem;
+}
+
+/* Slide 6: requirements for starting again, as a checklist. */
+.slidev-layout ul.checklist {
+  border-top: 1px solid #d7deea;
+  list-style: none;
+  margin: 1.6rem 0 0;
+  padding: 0;
+}
+
+.slidev-layout ul.checklist li {
+  align-items: start;
+  border-bottom: 1px solid #d7deea;
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: 2rem 15.5rem 1fr;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0.95rem 0.25rem;
+}
+
+.slidev-layout ul.checklist li::before {
+  background: #1fc75a url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center / 1.15rem no-repeat;
+  border-radius: 999px;
+  content: "";
+  height: 2rem;
+  width: 2rem;
+}
+
+.slidev-layout ul.checklist h3 {
+  color: var(--podplane-ink);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.5rem;
+  margin: 0;
+  opacity: 1;
+  padding: 0.25rem 0 0;
+  text-transform: none;
+}
+
+.slidev-layout ul.checklist p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin: 0;
+  padding-top: 0.25rem;
+}
+
+/* Slide 6: where the prototype's lessons meet market expectations. */
+.slidev-layout .market-grid {
+  grid-template-columns: 1.42fr 1fr;
+}
+
+.slidev-layout .market-grid .talk-card small {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+/* Lessons as compact rows rather than bullets. */
+.slidev-layout .talk-card ul.lesson-rows {
+  list-style: none;
+  padding: 0;
+}
+
+.slidev-layout .talk-card ul.lesson-rows li {
+  border-top: 1px solid #e3e8f0;
+  font-size: 1.15rem;
+  line-height: 1.35;
+  margin: 0;
+  padding: 0.6rem 0;
+}
+
+.slidev-layout .talk-card ul.lesson-rows li:first-child {
+  border-top: 0;
+}
+
+/* Customer quotes as speech bubbles, the second offset like a reply. */
+.slidev-layout .market-grid .quote-card blockquote {
+  background: #fff;
+  border: 1px solid #cfe0fb;
+  border-radius: 0.9rem;
+  box-shadow: 0 6px 16px rgb(0 102 255 / 8%);
+  font-size: 1.15rem;
+  line-height: 1.35;
+  margin: 1rem 0 0.4rem;
+  padding: 0.7rem 1rem 0.7rem 2.5rem;
+}
+
+.slidev-layout .market-grid .quote-card blockquote + blockquote {
+  margin-left: 1.5rem;
+}
+
+/* The reply's tail sits on the right, as if from a different person. */
+.slidev-layout .market-grid .quote-card blockquote + blockquote::after {
+  left: auto;
+  right: 1.6rem;
+}
+
+.slidev-layout .market-grid .quote-card blockquote::before {
+  font-size: 2.6rem;
+  left: 0.6rem;
+  top: 0.35rem;
+}
+
+.slidev-layout .market-grid .quote-card blockquote::after {
+  background: #fff;
+  border-bottom: 1px solid #cfe0fb;
+  border-right: 1px solid #cfe0fb;
+  bottom: -0.4rem;
+  content: '';
+  height: 0.75rem;
+  left: 1.6rem;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 0.75rem;
+}
+
+/* Slide 6: the adoption stat as a full-width highlight under the cards. */
+.stat-strip {
+  align-items: baseline;
+  background: #eef5ff;
+  border: 1px solid #8eb9ff;
+  border-radius: 1rem;
+  display: flex;
+  gap: 0.9rem;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.7rem 1.25rem;
+}
+
+.stat-strip strong {
+  color: var(--podplane-blue);
+  font-size: 1.9rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.stat-strip span {
+  color: var(--podplane-ink);
+  font-size: 1.15rem;
+  font-weight: 600;
+}

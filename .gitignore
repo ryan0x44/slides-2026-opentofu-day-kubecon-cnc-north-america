@@ -1,0 +1,7 @@
+node_modules/
+dist/
+slides.pdf
+slides.pptx
+.DS_Store
+*.local
+.amp/
