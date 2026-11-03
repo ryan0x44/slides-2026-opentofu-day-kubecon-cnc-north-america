@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "slidev --open",
     "build": "slidev build --download",
-    "export:pdf": "slidev export --format pdf --output slides.pdf",
+    "export:pdf": "slidev export --format pdf --per-slide --output slides.pdf",
     "export:pptx": "slidev export --format pptx --with-clicks false --output slides.pptx"
   },
   "devDependencies": {

@@ -266,7 +266,6 @@ onBeforeUnmount(() => observer?.disconnect())
 .node-cli {
   background: var(--podplane-blue);
   border: 0;
-  box-shadow: 0 8px 20px rgb(0 102 255 / 24%);
   color: #fff;
 }
 

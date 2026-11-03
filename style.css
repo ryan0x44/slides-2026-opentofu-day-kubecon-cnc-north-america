@@ -40,7 +40,6 @@
   background: var(--podplane-surface);
   border: 1px solid #d7deea;
   border-radius: 1rem;
-  box-shadow: 0 0.35rem 1rem rgb(18 24 38 / 8%);
   overflow: hidden;
   padding-top: calc(var(--terminal-inline-padding) + var(--terminal-inline-padding) + 0.65rem);
 }
@@ -1033,7 +1032,6 @@
   background: #fff;
   border: 1px solid #cfe0fb;
   border-radius: 0.9rem;
-  box-shadow: 0 6px 16px rgb(0 102 255 / 8%);
   font-size: 1.15rem;
   line-height: 1.35;
   margin: 1rem 0 0.4rem;
