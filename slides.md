@@ -87,12 +87,12 @@ class: v1-slide
 
 # Market Feedback: <span class="accent">IaC Is The Expectation</span>
 
-<div class="talk-grid market-grid">
-  <div class="talk-card talk-card-muted"><small>What the prototype showed</small><ul class="lesson-rows"><li>Stateless didn't work → a database is required.</li><li>Tunnels are required → VMs or containers are required.</li><li>The dependency graph was the hardest part.</li><li>A custom IaC engine wouldn't differentiate the product.</li></ul></div>
-  <div class="talk-card talk-card-accent quote-card"><small>What potential customers expected</small><blockquote>Can we take it and run it ourselves if we need to?</blockquote><blockquote>Can we see plan/apply output like Terraform?</blockquote></div>
-</div>
-
 <div class="stat-strip"><strong>62–73%</strong><span>of infrastructure engineers use Terraform or OpenTofu</span></div>
+
+<div class="talk-grid market-grid">
+  <div class="talk-card talk-card-accent quote-card"><small>What potential customers expected</small><blockquote>Can we take it and run it ourselves if we need to?</blockquote><blockquote>Can we see plan/apply output like Terraform?</blockquote></div>
+  <div class="talk-card talk-card-muted"><small>What the prototype showed</small><ul class="lesson-rows"><li>Stateless didn't work → a database is required.</li><li>Tunnels are required → VMs or containers are required.</li><li>The dependency graph was the hardest part.</li><li>A custom IaC engine wouldn't differentiate the product.</li></ul></div>
+</div>
 
 <div class="takeaway">The market expects IaC. We needed a DB + servers. <strong>What if we removed Serverless, and used OpenTofu?</strong></div>
 

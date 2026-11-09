@@ -5,3 +5,4 @@ slides.pptx
 .DS_Store
 *.local
 .amp/
+.playwright-mcp/
