@@ -145,14 +145,14 @@ import ExecutionPath from './components/Slide07-ExecutionPath.vue'
 
 ---
 
-# Open Source Demo: <span class="accent">6 Questions → Running Cluster</span>
+# Open Source Demo: <span class="accent">6 Questions → OpenTofu Apply</span>
 
 <div class="demo-grid">
   <div class="demo-steps">
     <div><span>1</span><strong>Answer a few questions</strong><small>Writes podplane.cluster.jsonc</small></div>
-    <div><span>2</span><strong>Generate files & review</strong><small>OpenTofu files, ready to commit</small></div>
+    <div><span>2</span><strong>Generate files</strong><small>OpenTofu files, ready to commit</small></div>
     <div><span>3</span><strong>Plan & apply</strong><small>OpenTofu JSONL output → progress UX</small></div>
-    <div><span>4</span><strong>Inspect the result</strong><small>Cluster ready, state in your account</small></div>
+    <div><span>4</span><strong>Review the result</strong><small>Resources created, state in your account</small></div>
   </div>
 
 ```bash
@@ -165,8 +165,6 @@ podplane cluster create --no-apply
 
 podplane cluster create -f podplane.cluster.jsonc
 # OpenTofu plan & apply
-
-kubectl get nodes
 ```
 
 </div>
